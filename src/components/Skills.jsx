@@ -6,7 +6,7 @@ import html5Skill from "../assets/icons/html5.png";
 import cssSkill from "../assets/icons/css.png";
 import bootstrapSkill from "../assets/icons/bootstrap.png";
 import javascriptSkill from "../assets/icons/javascript.png";
-import laravelSkill from "../assets/icons/laravel.png";
+import laravelSkill from "../assets/icons/lara.png";
 import mysqlSkill from "../assets/icons/mysql.png";
 import nodejsSkill from "../assets/icons/nodejs.png";
 import phpSkill from "../assets/icons/php.png";
