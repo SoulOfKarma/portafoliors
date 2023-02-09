@@ -80,6 +80,11 @@ function NavBar() {
                 <span>Contactame</span>{" "}
               </button>
             </a>
+            <a href="/portafoliors/document/ResumenCV.pdf" target="_blank">
+              <button className="vvcv">
+                <span>Descargar CV</span>{" "}
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>
