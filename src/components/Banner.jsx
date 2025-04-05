@@ -53,11 +53,15 @@ function Banner() {
               {"Hola, Soy Ricardo"} <span className="wrap">{text}</span>{" "}
             </h1>
             <p>
-              Tengo 8 años de experiencia en soporte de hardware y software y 2
-              años como Desarrollador Full stack, Me gusta aprender nuevos
-              desafíos, ya que puedo adquirir nuevos conocimientos y
-              metodologias de otros lenguajes, me apasionan los videojuegos y
-              esto me llevo que me gustara desarrollar aplicaciones.
+              Cuento con 4 años de experiencia como Desarrollador Full Stack,
+              combinando mis habilidades en desarrollo con una base sólida en
+              soporte de hardware y software adquirida durante 8 años. Esta
+              trayectoria me ha permitido desarrollar un enfoque integral para
+              resolver problemas tecnológicos, desde la infraestructura hasta el
+              desarrollo de software. Me gusta tener nuevos desafíos, ya que
+              puedo adquirir nuevos conocimientos y metodologías de otros
+              lenguajes, me apasionan los videojuegos y esto me llevo que me
+              gustara desarrollar aplicaciones.
             </p>
             <a href="#connect" onClick={() => onUpdateActiveLink("connect")}>
               <button onClick={() => console.log("Connect")}>

@@ -426,6 +426,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+.nav-link#projects-tabs-tab-fourth {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
@@ -640,4 +644,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .imglogof {
   padding: 3em;
+}
+
+/* Projects.css */
+.nav-pills.no-wrap {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  justify-content: start !important;
+  scrollbar-width: none; /* Firefox */
+}
+
+.nav-pills.no-wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.nav-pills.no-wrap .nav-link {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
