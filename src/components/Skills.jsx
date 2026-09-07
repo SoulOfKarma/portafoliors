@@ -4,16 +4,16 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import html5Skill from "../assets/icons/html5.png";
 import cssSkill from "../assets/icons/css.png";
-import bootstrapSkill from "../assets/icons/bootstrap.png";
 import javascriptSkill from "../assets/icons/javascript.png";
+import typescriptSkill from "../assets/typescript-design-assets/ts-logo-round-512.svg";
 import laravelSkill from "../assets/icons/lara.png";
+import nestjsSkill from "../assets/nestjs-svgrepo-com.svg";
 import mysqlSkill from "../assets/icons/mysql.png";
+import postgresqlSkill from "../assets/postgresql.svg";
 import nodejsSkill from "../assets/icons/nodejs.png";
 import phpSkill from "../assets/icons/php.png";
-import reactSkill from "../assets/icons/react.png";
 import vuejsSkill from "../assets/icons/vuejs.png";
-import javaSkill from "../assets/icons/java.png";
-import springSkill from "../assets/icons/spring.png";
+import quasarSkill from "../assets/Quasar.svg";
 import colorSharp from "../assets/icons/color-sharp.png";
 
 function Skills() {
@@ -50,40 +50,40 @@ function Skills() {
                 className="skill-slider img-responsive center-block"
               >
                 <div className="item">
-                  <img src={html5Skill} alt="" />
+                  <img src={html5Skill} alt="HTML5" />
                 </div>
                 <div className="item">
-                  <img src={cssSkill} alt="" />
+                  <img src={cssSkill} alt="CSS3" />
                 </div>
                 <div className="item">
-                  <img src={bootstrapSkill} alt="" />
+                  <img src={javascriptSkill} alt="JavaScript" />
                 </div>
                 <div className="item">
-                  <img src={javascriptSkill} alt="" />
+                  <img src={typescriptSkill} alt="TypeScript" />
                 </div>
                 <div className="item">
-                  <img src={laravelSkill} alt="" />
+                  <img src={vuejsSkill} alt="Vue.js" />
                 </div>
                 <div className="item">
-                  <img src={mysqlSkill} alt="" />
+                  <img src={quasarSkill} alt="Quasar Framework" />
                 </div>
                 <div className="item">
-                  <img src={nodejsSkill} alt="" />
+                  <img src={nestjsSkill} alt="NestJS" />
                 </div>
                 <div className="item">
-                  <img src={phpSkill} alt="" />
+                  <img src={laravelSkill} alt="Laravel" />
                 </div>
                 <div className="item">
-                  <img src={reactSkill} alt="" />
+                  <img src={nodejsSkill} alt="Node.js" />
                 </div>
                 <div className="item">
-                  <img src={vuejsSkill} alt="" />
+                  <img src={phpSkill} alt="PHP" />
                 </div>
                 <div className="item">
-                  <img src={javaSkill} alt="" />
+                  <img src={postgresqlSkill} alt="PostgreSQL" />
                 </div>
                 <div className="item">
-                  <img src={springSkill} alt="" />
+                  <img src={mysqlSkill} alt="MySQL" />
                 </div>
               </Carousel>
             </div>

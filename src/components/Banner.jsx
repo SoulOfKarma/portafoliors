@@ -53,15 +53,12 @@ function Banner() {
               {"Hola, Soy Ricardo"} <span className="wrap">{text}</span>{" "}
             </h1>
             <p>
-              Cuento con 4 años de experiencia como Desarrollador Full Stack,
-              combinando mis habilidades en desarrollo con una base sólida en
-              soporte de hardware y software adquirida durante 8 años. Esta
-              trayectoria me ha permitido desarrollar un enfoque integral para
-              resolver problemas tecnológicos, desde la infraestructura hasta el
-              desarrollo de software. Me gusta tener nuevos desafíos, ya que
-              puedo adquirir nuevos conocimientos y metodologías de otros
-              lenguajes, me apasionan los videojuegos y esto me llevo que me
-              gustara desarrollar aplicaciones.
+              Desarrollador Full Stack con más de 5 años de experiencia
+              desarrollando aplicaciones web, APIs REST e integraciones
+              utilizando NestJS, Laravel, Vue.js, TypeScript, PostgreSQL y
+              MySQL. Me motiva enfrentar nuevos desafíos tecnológicos,
+              aprender continuamente y desarrollar soluciones escalables,
+              mantenibles y orientadas a las necesidades del negocio.
             </p>
             <a href="#connect" onClick={() => onUpdateActiveLink("connect")}>
               <button onClick={() => console.log("Connect")}>

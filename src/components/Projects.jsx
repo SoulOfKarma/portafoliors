@@ -16,54 +16,98 @@ function Projects() {
   const projects1 = [
     {
       title: "Desarrollo Plataforma Mantencion HSJD",
-      description: "Panakeia",
-      imgUrl: vhgtrrff1,
-    },
-    {
-      title: "Desarrollo Plataforma Mantencion HSJD",
-      description: "Panakeia",
-      imgUrl: vhgtrrff2,
-    },
-    {
-      title: "Desarrollo Plataforma Mantencion HSJD",
-      description: "Panakeia",
-      imgUrl: vhgtrrff3,
+      description:
+        "Plataforma Panakeia para la gestion de tickets del area de Recursos Fisicos y sistema de bodega integrado para la administracion de materiales y solicitudes de reparacion, digitalizando procesos previamente gestionados mediante planillas Excel.",
+      imgUrls: [vhgtrrff1, vhgtrrff2, vhgtrrff3],
+      technologies: [
+        "Vue.js 2",
+        "Vuesax",
+        "Laravel 7",
+        "MySQL 8",
+        "APIs REST",
+        "JWT",
+        "Eloquent ORM",
+        "Linux CentOS 7",
+      ],
     },
   ];
   const projects3 = [
     {
       title: "Desarrollo Plataforma Abastecimiento HSLB",
-      description: "Siab",
-      imgUrl: vhslb1,
-    },
-    {
-      title: "Desarrollo Plataforma Abastecimiento HSLB",
-      description: "Siab",
-      imgUrl: vhslb2,
-    },
-    {
-      title: "Desarrollo Plataforma Abastecimiento HSLB",
-      description: "Siab",
-      imgUrl: vhslb3,
+      description:
+        "Modernizacion de los sistemas SIAB y Plan Anual de Compras, migrando aplicaciones desarrolladas en Visual Basic hacia una arquitectura web moderna e implementando firmas digitales para reducir el uso de documentacion fisica.",
+      imgUrls: [vhslb1, vhslb2, vhslb3],
+      technologies: [
+        "Vue.js 2",
+        "Vuesax 3",
+        "Laravel 7",
+        "MySQL 8",
+        "JWT",
+        "Axios",
+        "Linux CentOS 7",
+        "Eloquent ORM",
+      ],
     },
   ];
   const projects4 = [
     {
       title: "Grupo Tus Maquinas - Portal",
-      description: "Portal de Arriendo y Venta de Maquinarias",
-      imgUrl: gtm1,
-    },
-    {
-      title: "Grupo Tus Maquinas - Vitrina Autoservicio",
       description:
-        "Portal de Autoatencion para publicacion de Maquinarias de Arriendo y Venta",
-      imgUrl: gtm2,
+        "Desarrollo, mantenimiento y evolucion continua del portal principal de Grupo Tus Maquinas: arriendo y venta de maquinaria, vitrina de autoatencion para publicacion de equipos y bitacora de gestion documental en tiempo real.",
+      imgUrls: [gtm1, gtm2, gtm3],
+      technologies: [
+        "Vue.js 3",
+        "Vite",
+        "NestJS",
+        "CakePHP 3",
+        "PostgreSQL",
+        "Bootstrap",
+        "JWT",
+        "Puppeteer",
+        "Cheerio",
+      ],
     },
+  ];
+  const projectsBackoffice = [
     {
-      title: "Grupo Tus Maquinas - Bitacora",
+      title: "BackOffice IA - Videovigilancia",
       description:
-        "Portal de gestion de documentacion y estado de Maquinarias en tiempo real",
-      imgUrl: gtm3,
+        "Plataforma para la recepcion, visualizacion y gestion de eventos generados por sistemas de videovigilancia con analisis de Inteligencia Artificial, permitiendo administrar incidentes, visualizar evidencias y clasificar eventos.",
+      technologies: [
+        "Vue.js 3",
+        "Vite",
+        "NestJS",
+        "TypeScript",
+        "MySQL",
+        "PostgreSQL",
+        "JWT",
+        "API Keys",
+      ],
+    },
+  ];
+  const projectsMDSystem = [
+    {
+      title: "MDSystem - Control de Acceso",
+      description:
+        "Plataforma web y aplicacion movil nativa para Android orientadas a la gestion de control de acceso, administracion de visitas y rondas de personal de seguridad, con automatizacion de reportes mediante Cron Jobs.",
+      technologies: [
+        "Vue.js 3",
+        "Vite",
+        "NestJS",
+        "TypeScript",
+        "MySQL",
+        "Android (Kotlin)",
+        "JWT",
+        "Cron Jobs",
+      ],
+    },
+  ];
+  const projectsPublicaExpress = [
+    {
+      title: "Publica Express",
+      description:
+        "Aplicacion desarrollada dentro de Grupo Tus Maquinas para la automatizacion e integracion de datos, complementando el portal principal mediante APIs REST reutilizables bajo una arquitectura de microservicios.",
+      technologies: ["Vue.js 3", "NestJS", "CakePHP 3", "PostgreSQL", "Puppeteer", "Cheerio"],
     },
   ];
   return (
@@ -76,7 +120,7 @@ function Projects() {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                className="nav-pills no-wrap mb-5 align-items-center"
+                className="nav-pills mb-5 align-items-center"
                 id="pills-tab"
               >
                 <Nav.Item>
@@ -89,6 +133,15 @@ function Projects() {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">Grupo Tus Maquinas</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="fifth">Publica Express</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="sixth">BackOffice IA</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="seventh">MDSystem</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -109,6 +162,27 @@ function Projects() {
                 <Tab.Pane eventKey="third">
                   <Row>
                     {projects4.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fifth">
+                  <Row>
+                    {projectsPublicaExpress.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="sixth">
+                  <Row>
+                    {projectsBackoffice.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="seventh">
+                  <Row>
+                    {projectsMDSystem.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
